@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="clock"></div>
+
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = timeString;
+      }
+
+      // Update the time every second
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
